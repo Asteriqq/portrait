@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Portrait</title>
+    <style>
+        body {
+            background-color: rgb(250, 252, 252);
+            background-image: url('Portrait launch.jpg');
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center; /* Center vertically */
+            margin: 20px;
+        }
+        .header img {
+            width: 100px; /* Adjust size */
+            height: 100px; /* Adjust size */
+            border-radius: 50%; /* Make it round */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .header h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 24px; /* Adjust font size */
+        }
+        .hero {
+            display: flex; /* Use flexbox to position items */
+            align-items: center; /* Center vertically */
+            height: 400px; /* Fixed height for the hero section */
+            overflow: hidden; /* Prevent overflow of image */
+            flex-direction: row; /* Default layout */
+        }
+        .hero img {
+            width: 60%; /* Adjust width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the section */
+        }
+        .content {
+            flex: 1; /* Take up remaining space */
+            padding: 20px; /* Add some padding */
+            text-align: left; /* Align text to the left */
+            z-index: 1; /* Ensure content is above the image */
+            background-color: white;
+            color: black;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .about {
+            background-color: azure;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #headname{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 100px;
+        }
+        #about{
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #howtobuy{
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #tickle{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #sub{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #note{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column; /* Stack elements on smaller screens */
+                height: auto; /* Allow height to adjust */
+                text-align: center; /* Center align text */
+            }
+            .hero img {
+                width: 100%; /* Full width on mobile */
+                height: 200px; /* Adjust height for mobile */
+                object-fit: cover; /* Maintain aspect ratio */
+            }
+            .content {
+                padding: 10px; /* Less padding on mobile */
+            }
+            .header {
+                flex-direction: column; /* Stack header elements */
+                align-items: center; /* Center elements */
+            }
+            .header img {
+                margin-bottom: 10px; /* Space below the image */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px; /* Smaller font size for mobile */
+            }
+            .buttons a {
+                padding: 8px 16px; /* Smaller button padding */
+            }
+            .footer {
+                font-size: 16px; /* Smaller footer text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Portrait launch.jpg" alt="APE Character">
+        <h1 id="headname">$Portrait</h1>
+    </div>
+    <div class="hero">
+        <img src="back.jpg" alt="Hero Image"> <!-- Full-size hero image -->
+        <div class="content">
+            <p id="note">
+                Unleash your inner crypto artist with $Portrait on Ape chain! 🎨 It’s like owning your own self-portrait… but on the blockchain! 🚀 Who needs Picasso when you’ve got you? 😉 Paint the crypto world with your unique vibe and join the digital art parade. Be your own masterpiece with $Portrait!
+            </p>
+            <div class="buttons">
+                <a href="https://x.com/port_raittt?s=21" target="_blank">TWITTER</a>
+                <a href="https://t.me/selffportrait" target="_blank">TELEGRAM</a>
+                <a href="#buy">HOW TO BUY</a>
+            </div>
+        </div>
+    </div>
+    <h2 id="about">ABOUT $PORTRAIT</h2>
+    <div class="section about">
+        <p id="note"> Sometimes the only thing worth staring at is yourself. Just vibes, zero logic, maximum reflection $portrait</p>
+    </div>
+    <div>
+        <h2 id="howtobuy">HOW TO BUY </h2>
+        <div class="section about">
+          <p id="note">
+            How to bridge $APE on your wallet:
+            <P id="note">1. Go to <a href="https://stargate.finance/bridge" class="newlink" style="background: none; color: black;">Stargate</a> and connect your personal wallet.</P>
+            <P id="note">2. Bridge your $APE from erc20 to Ape Chain (make sure you have enough $ETH to do this).</P>
+            <p id="note">3. Send your $APE on Ape Chain from your personal wallet to the wallet from the bot</p>
+            <p id="note">4. ⁠Use <a href="(https://t.me/nfd_ape_chain_trade_bot?start=ESTnc1ZIzHfB_CA_buy)" class="newlink" style="background: none; color: black;">nfd bot</a>, paste ca and buy </p><br>
+          </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="note">$Portrait</p>
+        <p id="note">ca: coming soon</p>
+    </div>
+</body>
+</html>
